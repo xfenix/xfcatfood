@@ -2,6 +2,14 @@ import React, { Component } from "react";
 
 
 export default class CurrentFood extends Component {
+    clickOk() {
+        alert(1)
+    }
+
+    clickNotOk() {
+        alert(2)
+    }
+
     render() {
         return <div className="current">
             <h1 className="current__title"></h1>
@@ -10,13 +18,5 @@ export default class CurrentFood extends Component {
                 <a href="#" onclick={clickNotOk} className="current__button current__button_notok">Не ест :(</a>
             </div>
         </div>
-    }
-
-    clickOk() {
-        alert(1)
-    }
-
-    clickNotOk() {
-        alert(2)
     }
 }

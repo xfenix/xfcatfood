@@ -1,0 +1,17 @@
+{
+    "name": "Xfcatfood",
+    "short_name": "Xfcatfood",
+    "theme_color": "#8edaff",
+    "background_color": "#2196f3",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "Scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "icons/cat.png",
+            "type": "image/png"
+        }
+    ],
+    "splash_pages": null
+}
