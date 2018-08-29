@@ -1,8 +1,17 @@
-h1 {
-  color: green;
+body {
+    text-align: center;
+    margin: auto;
 }
 
-body {
-  text-align: center;
-  margin: auto;
+.app {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.lastfood {
+    margin-bottom: 40px;
+}
+
+.lastfood__item {
+    list-style-type: none;
 }

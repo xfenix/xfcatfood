@@ -1,5 +1,4 @@
 const express = require('express')
-const os = require('os')
 const redis = require('redis')
 require('dotenv').config()
 
@@ -9,17 +8,9 @@ app.use(express.static('dist'))
 
 
 app.get(
-    '/api/getUsername/',
+    '/api/food/last/',
     (req, res) => {
-        return res.send({ username: os.userInfo().username })
-    }
-)
-
-app.get(
-    '/api/food/',
-    (req, res) => {
-        client.set('lol', 1)
-        return res.json({a: 1})
+        return res.json([1, 2, 3, 4, 5, 10, 15])
     }
 )
 

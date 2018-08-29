@@ -1,7 +1,7 @@
 {
-  "name": "simple-react-full-stack",
+  "name": "xfcatfood",
   "version": "1.0.0",
-  "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
+  "description": "Xfcatfood application",
   "main": "src/server/index.js",
   "scripts": {
     "start": "node src/server/index.js",
@@ -10,8 +10,8 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Sandeep Raveesh",
-  "license": "ISC",
+  "author": "Denis Anikin",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
