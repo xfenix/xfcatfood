@@ -10,7 +10,14 @@ app.use(express.static('dist'))
 app.get(
     '/api/food/last/',
     (req, res) => {
-        return res.json([1, 2, 3, 4, 5, 10, 15])
+        return res.json([1, 2, 3, 4, 5, 10, 15, 1, 2, 3, 4, 5, 10, 15, 1, 2, 3, 4, 5, 10, 15])
+    }
+)
+
+app.get(
+    '/api/food/next/',
+    (req, res) => {
+        return res.json('Красная банка')
     }
 )
 

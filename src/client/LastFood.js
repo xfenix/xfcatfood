@@ -15,15 +15,18 @@ export default class LastFood extends Component {
 
     render() {
         return (
-            <ul className="lastfood">
-                {this.state.lastCans ? (
-                    this.state.lastCans.map(function(name, index){
-                        return <li className="lastfood__item" key={index}>{name}</li>;
-                    })
-                ) : (
-                    <li></li>
-                )}
-            </ul>
+            <div className="lastfood">
+                <h4 className="lastfood__title">Последние банки:</h4>
+                <ul className="lastfood__list">
+                    {this.state.lastCans ? (
+                        this.state.lastCans.map(function(name, index){
+                            return <li className="lastfood__item" key={index}>{name}</li>;
+                        })
+                    ) : (
+                        <li></li>
+                    )}
+                </ul>
+            </div>
         );
     }
 }
