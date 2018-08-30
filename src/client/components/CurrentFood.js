@@ -4,21 +4,25 @@ import React, { Component } from "react";
 export default class CurrentFood extends Component {
     constructor(props) {
         super(props);
-        this.state = { currentCan: null };
+        this.state = {currentCan: null};
+    }
+
+    submitStatus(statusValue) {
+        axios.post('/api/food/add/', {status: statusValue})
     }
 
     clickOk(e) {
-        alert(1)
+        submitStatus(1)
         e.preventDefault()
     }
 
     clickNotOk(e) {
-        alert(2)
+        submitStatus(0)
         e.preventDefault()
     }
 
     componentDidMount() {
-        fetch('/api/food/next/')
+        axios('/api/food/next/')
             .then(res => res.json())
             .then(data => this.setState({currentCan: data}));
     }

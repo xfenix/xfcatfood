@@ -4,11 +4,11 @@ import React, { Component } from "react";
 export default class LastFood extends Component {
     constructor(props) {
         super(props);
-        this.state = { lastCans: null };
+        this.state = {lastCans: null};
     }
 
     componentDidMount() {
-        fetch('/api/food/last/')
+        axios('/api/food/last/')
             .then(res => res.json())
             .then(data => this.setState({lastCans: data}));
     }

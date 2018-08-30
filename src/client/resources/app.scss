@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.app {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.lastfood {
+    &__item {
+        list-style-type: none;
+    }
+}
+
+.current {
+    margin-bottom: 50px;
+
+    &__title {
+        font-size: 50px;
+    }
+
+    &__buttons {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        display: inline-block;
+        vertical-align: middle;
+        zoom: 3;
+        margin-left: 10px;
+    }
+
+    &__button {
+        color: #fff;
+        display: block;
+        flex-grow: 1;
+        width: 200px;
+        padding: 10px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &_ok {
+            background-color: #76A67D;
+            margin-right: 20px;
+        }
+
+        &_notok {
+            background-color: #E65B39;
+        }
+    }
+}

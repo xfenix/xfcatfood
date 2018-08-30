@@ -13,6 +13,7 @@
   "author": "Denis Anikin",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "react": "^16.3.1",
@@ -27,6 +28,7 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "concurrently": "^4.0.0",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^17.0.0",
@@ -35,10 +37,12 @@
     "eslint-plugin-react": "^7.7.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
     "nodemon": "^1.17.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.0.1",
-    "webpack": "^4.5.0",
+    "webpack": "^4.17.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.3"
   }
