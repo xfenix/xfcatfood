@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 
 export default class LastFood extends Component {
@@ -23,7 +24,7 @@ export default class LastFood extends Component {
                             return <li className="lastfood__item" key={index}>{name}</li>;
                         })
                     ) : (
-                        <li></li>
+                        <li className="lastfood__item"></li>
                     )}
                 </ul>
             </div>

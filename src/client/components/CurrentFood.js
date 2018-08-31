@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 
 export default class CurrentFood extends Component {
@@ -12,12 +13,12 @@ export default class CurrentFood extends Component {
     }
 
     clickOk(e) {
-        submitStatus(1)
+        this.submitStatus(1)
         e.preventDefault()
     }
 
     clickNotOk(e) {
-        submitStatus(0)
+        this.submitStatus(0)
         e.preventDefault()
     }
 
@@ -32,10 +33,10 @@ export default class CurrentFood extends Component {
             <h4 className="current__pretitle">Коту нужно дать:</h4>
             <h1 className="current__title">{this.state.currentCan}</h1>
             <div className="current__buttons">
-                <a href="#" onClick={this.clickOk} className="current__button current__button_ok">
+                <a href="#" onClick={this.clickOk.bind(this)} className="current__button current__button_ok">
                     Ест <span className="current__icon">😸</span>
                 </a>
-                <a href="#" onClick={this.clickNotOk} className="current__button current__button_notok">
+                <a href="#" onClick={this.clickNotOk.bind(this)} className="current__button current__button_notok">
                     Не ест <span className="current__icon">😾</span>
                 </a>
             </div>
