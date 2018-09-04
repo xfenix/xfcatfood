@@ -41,6 +41,7 @@ app.post(
     (req, res) => {
         client.lpush(MAIN_STORAGE_KEY, JSON.stringify({
             status: req.body.status,
+            date: new Date(),
             id: getLastCan().id,
         }));
         return res.json({status: true})
