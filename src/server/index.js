@@ -17,7 +17,7 @@ const getLastCan = function() {
     return JSON.parse(retrieveLastRecords(0))
 }
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(express.static('dist'))
 
@@ -43,7 +43,7 @@ app.post(
             status: req.body.status,
             date: new Date(),
             id: getLastCan().id,
-        }));
+        }))
         return res.json({status: true})
     }
 )
