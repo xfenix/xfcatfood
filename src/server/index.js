@@ -9,6 +9,40 @@ const bodyParser = require('body-parser')
 const REDIS_DB = process.env.REDIS_DB ? process.env.REDIS_DB : 1
 const LAST_RECORDS = process.env.LAST_RECORDS ? process.env.LAST_RECORDS : 20
 const MAIN_STORAGE_KEY = 'catfood'
+const FOOD_TYPES = {
+    1: {
+        title: 'Оранжевая',
+        description: 'Курица',
+    },
+    2: {
+        title: 'Желтая',
+        description: 'Сыр',
+    },
+    3: {
+        title: 'Синяя',
+        description: 'Белая рыба',
+    },
+    4: {
+        title: 'Красная',
+        description: 'Лосось',
+    },
+    5: {
+        title: 'Зеленая',
+        description: 'Краб',
+    },
+    6: {
+        title: 'Розовая',
+        description: 'Омар',
+    },
+    7: {
+        title: 'Пакетик',
+        description: 'Тунец и лосось',
+    },
+    8: {
+        title: 'Шеба',
+        description: 'С креветкой',
+    },
+};
 // and functions
 const retrieveLastRecords = function(count_records=LAST_RECORDS) {
     return client.lrange(MAIN_STORAGE_KEY, 0, count_records)
